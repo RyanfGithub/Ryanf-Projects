@@ -1,1 +1,1 @@
-🐍Projects writen with python
+🐍 Minor Projects writen with python
