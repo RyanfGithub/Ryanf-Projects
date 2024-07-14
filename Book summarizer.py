@@ -47,7 +47,7 @@ class App(customtkinter.CTk):
             self.textbox.see("end")  # Scroll to the bottom after updating text
 
     def find_places(self, Book, Length):
-        client = OpenAI(api_key="Insert OpenAi API key")
+        client = OpenAI(api_key="<OpenAi API key>")
 
         system_data = [{
             "role": "system",
