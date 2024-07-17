@@ -17,14 +17,14 @@ while True:
     print("Previous price:", price_before)
 
     try:
-        url = "https://webscraper.io/test-sites/e-commerce/allinone"
+        url = "<Insert Website URL>"
         results = requests.get(url)
         results.raise_for_status()  # Check if the request was successful
 
         doc = BeautifulSoup(results.text, 'html.parser')
 
         # Extract the price text
-        price_element = doc.find('h4')
+        price_element = doc.find('<Price Element HTML object Type>')
         if price_element is None:
             print("Price element not found.")
             continue
